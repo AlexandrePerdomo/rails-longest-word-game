@@ -1,0 +1,11 @@
+<%= @results[:message] %>
+<p>Here is your score : <%= @results[:score] %></p>
+<p>Here is your time : <%= @results[:time] %></p>
+
+<form action="/game">
+  <label for="question">Choose your new grid length</label>
+  <input type="text" id="length" name="length" placeholder="Enter a number?" value="<%=@length%>">
+  <input type="submit" id='length' value="Go on!">
+</form>
+
+

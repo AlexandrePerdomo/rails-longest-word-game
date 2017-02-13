@@ -1,0 +1,14 @@
+<h1>******** Welcome to the longest word-game ! ********</h1>
+<form action="/game">
+  <label for="question">Choose grid length</label>
+  <input type="text" id="length" name="length" placeholder="Enter a number?" value="<%=@length%>">
+  <input type="submit" id='length' value="Go on!">
+</form>
+<p>Here is your grid : <%= @grid %></p>
+
+<form action="/score">
+  <label for="question">Enter your best word quickly</label>
+  <input type="text" id="length" name="attempt" placeholder="Your word" value="">
+  <input type="submit" value="Let's go!">
+</form>
+
